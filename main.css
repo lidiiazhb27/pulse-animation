@@ -1,0 +1,82 @@
+.color{
+    background-color: rgba(216,227,232,255);
+}
+.box{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+    height: 180px;
+    margin: auto;
+}
+.box-text{
+    font-size: 28px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+}
+.box-color{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.white{
+    background-color: white;
+}
+.orange{
+    background-color: rgba(255,131,56,255);
+}
+.malina{
+    background-color: rgba(255,98,81,255);
+}
+.yellow{
+    background-color: rgba(255,178,60,255);
+}
+.green{
+    background-color: rgba(35,198,177,255);
+}
+.blue{
+    background-color: rgba(39,164,226,255);
+}
+.purple{
+    background-color: rgba(146,81,171,255);
+}
+.black{
+    background-color: black;
+}
+.pulse{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 25px;
+    margin-left: 15px;
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+}
+.pulse2{
+    margin-top: -20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+
+    }
+    50%{
+        opacity: 0;
+        transform: scale(1.8);
+    }
+    100%{
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
